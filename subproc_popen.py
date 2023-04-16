@@ -28,7 +28,7 @@ while (proc1.poll() is None) or (proc2.poll() is None):
 print("end")
 
 # -----------------------------------
-print("これは期待通り終らない。stdoutが詰まっている？")
+print("これは期待通り終わる。tmpfileに溜まるから？")
 tmp1_stdout = tempfile.TemporaryFile()
 tmp1_stderr = tempfile.TemporaryFile()
 tmp2_stdout = tempfile.TemporaryFile()
